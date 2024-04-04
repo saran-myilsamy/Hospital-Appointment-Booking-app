@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Patient Info</title>
+    <link id="favicon" rel="icon" href="https://www.nexmo.com/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/patient.css">
+    <script src="/client.js" defer></script>
+  </head>
+  
+  <body>
+    <header>
+      <h1><a href="/">Out Patient Department</a></h1>
+      <div class="logo">
+          <img src="https://www.pinclipart.com/picdir/big/138-1384887_stthoscope-icon-stetoskop-icon-clipart.png" alt="Nexmo" style="width:50%; height:50%;">
+      </div>
+    </header>
+    <main style="width: 80%; position: relative; margin-left: 10%;">
+       {% if status == 0 %}
+            <h1>You have been successfully Verified!</h1> <br><br>
+            <a href="/knowdoctor"><input type="submit" value="Know Your Doctor!"></a>
+        {% else %}
+            <p>Something went wrong… <span class="kaomoji">ಠ_ಠ</span></p>
+            <p>Please contact the administrator for more information.</p>
+        {% endif %}
+    </main>
+    <footer>
+        <p><small>Built with Creed!</small></p>
+    </footer>
+  </body>
+</html>

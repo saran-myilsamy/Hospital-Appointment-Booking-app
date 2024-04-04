@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OPD - LogIn</title>
+    <meta name="description" content="2FA implementation with Nexmo's Verify API on Node.js">
+    <link id="favicon" rel="icon" href="https://www.nexmo.com/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/client.js" defer></script>
+  </head>
+  
+  <body>
+    <header>
+      <h1><a href="/">Out Patient Department</a></h1>
+      <div class="logo">
+        <img src="https://www.pinclipart.com/picdir/big/138-1384887_stthoscope-icon-stetoskop-icon-clipart.png" alt="Nexmo" style="width:50%; height:50%;">
+      </div>
+    </header>
+    <main class="register">
+        <img src="https://www.adverscribe.com/wp-content/uploads/2019/08/opd.png" alt="Logo"/>
+        <p>Please enter your phone number:</p>
+        <form method="post" action="verify">
+            <input name="phone" type="tel" placeholder="+919876543210">
+            <button>Get OTP</button>
+        </form>
+    </main>
+    <footer>
+      <p><small>Built with Creed!</small></p>
+    </footer>
+  </body>
+</html>
